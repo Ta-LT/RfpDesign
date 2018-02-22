@@ -17,22 +17,36 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
+    position: relative;
 }
 
-.main-btn i {
-    font-size: 15vw !important;
-    margin-top: 10%;
-    height: 60%;
-}
-.main-btn p {
-    margin-bottom: 0 !important;
-    font-size: 4.5vw;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    margin-top: 5%;
-    height: 40%;
-}
+    .main-btn i {
+        font-size: 15vw !important;
+        margin-top: 10%;
+        height: 60%;
+    }
+
+    .main-btn p {
+        margin-bottom: 0 !important;
+        font-size: 2.6vh;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .main-btn .main-btn-outter {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-btn .main-btn-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
 
 table i {
     font-size: 20vw !important;
@@ -41,9 +55,14 @@ table i {
 table p {
     margin-bottom: 0 !important;
     font-size: 5vw;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+table {
+    table-layout: fixed;
+    height: 100%;
 }
 
 .btn-outline-primary.m-btn--air.focus, .btn-outline-primary.m-btn--air:focus, .btn-outline-primary.m-btn--air:hover, .btn-primary.m-btn--air.focus, .btn-primary.m-btn--air:focus, .btn-primary.m-btn--air:hover, .m-btn--gradient-from-primary.m-btn--air.focus, .m-btn--gradient-from-primary.m-btn--air:focus, .m-btn--gradient-from-primary.m-btn--air:hover {
@@ -57,14 +76,14 @@ table p {
     width: 100%;
 }
 
-#footer,#header {
+#footer, #header {
     background-image: url('assets/app/media/img/bg/bg-5.jpg');
     background-size: cover;
 }
 
-#header span.main-title {
-    color:#ffffff;
-}
+    #header span.main-title {
+        color: #ffffff;
+    }
 
     #footer button {
         min-width: 85%;

@@ -21,17 +21,15 @@
 
 .main-btn i {
     font-size: 15vw !important;
-    margin-top: 10%;
-    height: 60%;
+    margin: 5%;
 }
-.main-btn p {
+.main-btn-p {
     margin-bottom: 0 !important;
     font-size: 4.5vw;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
     margin-top: 5%;
-    height: 40%;
 }
 
 table i {

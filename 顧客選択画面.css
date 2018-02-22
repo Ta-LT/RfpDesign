@@ -33,11 +33,15 @@
     width: 100%;
 }
 
-#footer {
-    background-image:url('assets/app/media/img/bg/bg-1.jpg');
-    background-size:cover;
+
+#footer,#header {
+    background-image: url('assets/app/media/img/bg/bg-5.jpg');
+    background-size: cover;
 }
 
+#header span.main-title {
+    color:#ffffff;
+}
 #footer button {
     min-width: 85%;
 }
